@@ -1,0 +1,336 @@
+                        * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                    }
+                    
+                    body {
+                        font-family: Arial, sans-serif;
+                        background-color: #f4f4f4;
+                    }
+                    /* Style for the header section */
+                    
+                    .header {
+                        height: 100vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        background-image: url('images/green.jpg');
+                        /* Insert your image here */
+                        background-size: cover;
+                        /* Ensures the image covers the entire background */
+                        background-position: center;
+                        /* Centers the image */
+                        background-repeat: no-repeat;
+                        /* Prevents the image from repeating */
+                        color: rgb(207, 108, 16);
+                        opacity: 0.8;
+                        /* Add this line */
+                        filter: brightness(0.8);
+                        /* Add this line
+                    }
+                    /* Header content styling */
+                        .header-content {
+                            background-color: rgba(0, 0, 0, 0.5);
+                            /* Adds a translucent background to make text readable */
+                            padding: 20px;
+                            border-radius: 10px;
+                        }
+                        .header h1 {
+                            font-size: 3em;
+                            margin-bottom: 20px;
+                        }
+                        .header p {
+                            font-size: 1.5em;
+                        }
+                        /* Navigation bar styling */
+                        nav {
+                            background-color: #333;
+                            /* Dark background for the navbar */
+                            padding: 10px 0;
+                            text-align: center;
+                        }
+                        .navbar {
+                            list-style: none;
+                            display: flex;
+                            justify-content: center;
+                            gap: 30px;
+                            /* Space between the navigation links */
+                        }
+                        .navbar li {
+                            display: inline;
+                        }
+                        .navbar a {
+                            color: white;
+                            text-decoration: none;
+                            padding: 10px 20px;
+                            font-size: 1.2em;
+                            transition: background-color 0.3s, color 0.3s;
+                            /* Smooth transition for hover effect */
+                        }
+                        .navbar a:hover {
+                            background-color: green;
+                            /* Hover effect: background turns green */
+                            color: white;
+                            border-radius: 5px;
+                            /* Slightly rounded corners for the hover effect */
+                        }
+                        /* Styling the "Visit us to know more" text box */
+                        .visit-us-button {
+                            display: inline-block;
+                            padding: 15px 30px;
+                            background-color: green;
+                            /* Green button */
+                            color: white;
+                            font-size: 1.2em;
+                            text-decoration: none;
+                            border-radius: 5px;
+                            /* Slightly rounded corners */
+                            margin-top: 20px;
+                            /* Adds space between the button and the text */
+                            transition: background-color 0.3s, transform 0.3s;
+                            /* Smooth transition for hover effect */
+                        }
+                        .visit-us-button:hover {
+                            background-color: rgb(28, 221, 28);
+                            /* Dark green on hover */
+                            transform: scale(1.1);
+                            /* Slightly increase size on hover */
+                        }
+                        .about {
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 50px;
+                            background-color: #161a16;
+                        }
+                        .about-content {
+                            display: flex;
+                            width: 100%;
+                        }
+                        .about-heading {
+                            font-size: 2.5em;
+                            color: #b9e90c;
+                            margin-bottom: 30px;
+                        }
+                        .left-image,
+                        .right-image {
+                            width: 48%;
+                            /* Each image takes up 50% of the screen */
+                            background-size: cover;
+                            background-position: center;
+                            height: 400px;
+                            /* Set the height of the images */
+                            border-radius: 10px;
+                            position: relative;
+                        }
+                        /* Image 1: Irrigation Solution */
+                        .left-image {
+                            background-image: url('images/d2.jpg');
+                            /* Insert your first image here */
+                        }
+                        /* Image 2: Sustainable Agriculture */
+                        .right-image {
+                            background-image: url('images/perfect.jpg');
+                            /* Insert your second image here */
+                        }
+                        .image-description {
+                            position: absolute;
+                            bottom: 10px;
+                            left: 10px;
+                            right: 10px;
+                            background-color: rgba(81, 150, 190, 0.6);
+                            color: rgb(34, 207, 92);
+                            padding: 15px;
+                            border-radius: 5px;
+                        }
+                        .services {
+                            padding: 50px 0;
+                            background-color: #0d8a8a;
+                            text-align: center;
+                        }
+                        .services-heading {
+                            font-size: 2.5em;
+                            color: #333;
+                            margin-bottom: 30px;
+                        }
+                        .services-content {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 20px;
+                        }
+                        .left-image,
+                        .right-image {
+                            width: 45%;
+                            background-size: cover;
+                            background-position: center;
+                            height: 400px;
+                            border-radius: 10px;
+                            position: relative;
+                        }
+                        .left-image {
+                            background-image: url('images/farmer1.jpg');
+                            /* Insert image for left side here */
+                        }
+                        .right-image {
+                            background-image: url('images/farmer2.jpg');
+                            /* Insert image for right side here */
+                        }
+                        .service-description {
+                            position: absolute;
+                            bottom: 10px;
+                            left: 10px;
+                            right: 10px;
+                            background-color: rgba(0, 0, 0, 0.6);
+                            color: white;
+                            padding: 15px;
+                            border-radius: 5px;
+                        }
+                        .service-description h3 {
+                            margin-bottom: 10px;
+                        }
+                        .service-description p {
+                            font-size: 1em;
+                        }
+                        .blogs {
+                            padding: 50px 0;
+                            background-color: #7b807f;
+                            text-align: center;
+                        }
+                        .blogs-heading {
+                            font-size: 2.5em;
+                            color: #333;
+                            margin-bottom: 30px;
+                        }
+                        .blogs-content {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 20px;
+                        }
+                        .blog-image {
+                            width: 70%;
+                            height: 300px;
+                            background-size: cover;
+                            background-position: left;
+                            border-radius: 15%;
+                            position: relative;
+                            border: 50% solid #fff;
+                            /* White border around the circular image */
+                        }
+                        .top-image {
+                            background-image: url('images/blog1.jpg');
+                            /* Replace with your first blog image */
+                        }
+                        .bottom-image {
+                            background-image: url('images/blog2.jpg');
+                            /* Replace with your second blog image */
+                            border: 50%;
+                        }
+                        .image-description {
+                            position: absolute;
+                            bottom: 10px;
+                            left: 10px;
+                            right: 10px;
+                            background-color: rgba(0, 0, 0 0.6);
+                            color: white;
+                            padding: 15px;
+                            border-radius: 5px;
+                        }
+                        .ratings {
+                            margin-top: 10px;
+                        }
+                        .star {
+                            color: blue;
+                            font-size: 1.5em;
+                        }
+                        .contacts {
+                            padding: 50px 0;
+                            background-color: #26815e;
+                            text-align: center;
+                        }
+                        .contacts-heading {
+                            font-size: 2.5em;
+                            color: #333;
+                            margin-bottom: 20px;
+                        }
+                        .contact-content {
+                            font-size: 1.2em;
+                            color: #555;
+                        }
+                        .contact-content p {
+                            margin: 10px 0;
+                        }
+                        /* Footer Styling */
+                        .footer {
+                            background-color: #333;
+                            color: white;
+                            padding: 20px 0;
+                            text-align: center;
+                        }
+                        .footer-content {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 20px;
+                        }
+                        .contact-info {
+                            font-size: 1.2em;
+                        }
+                        .social-media {
+                            display: flex;
+                            gap: 20px;
+                        }
+                        .social-icon {
+                            width: 5.625rem;
+                            height: 5.625rem;
+                            transition: transform 0.3s ease;
+                            align-items: center;
+                            justify-content: center;
+                            position: relative;
+                            overflow: hidden;
+                            background-color: #a6da17;
+                            display: flex;
+                        }
+                        .social-icon:hover>i {
+                            scale: 1.2;
+                            color: blue;
+                            transform: scale(1.2);
+                        }
+                        .social-icon img {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 50%;
+                        }
+                        .social-icon:hover::before {
+                            animation: slide 0.75 forwards;
+                        }
+                        @keyframes slide {
+                            50% {
+                                left: 10%;
+                                top: -40%;
+                            }
+                            100% {
+                                left: -15%;
+                                top: -15%;
+                            }
+                        }
+                        .social-icon::before {
+                            background: var(--color);
+                            content: "";
+                            position: absolute;
+                            width: 130%;
+                            height: 130%;
+                            left: -110%;
+                            top: 80%;
+                            transform: rotate(45deg);
+                        }
+                        .footer-note {
+                            font-size: 0.9em;
+                            color: #ccc;
+                            margin-top: 10px;
+                        }
+                        .footer p {
+                            margin: 0;
+                        }
