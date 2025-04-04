@@ -28,9 +28,9 @@
                         opacity: 0.8;
                         /* Add this line */
                         filter: brightness(0.8);
-                        /* Add this line
+                        /* Add this line*/
                     }
-                    /* Header content styling */
+                    
                         .header-content {
                             background-color: rgba(0, 0, 0, 0.5);
                             /* Adds a translucent background to make text readable */
